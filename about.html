@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Max1000</title>
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Pictonic (font) Icons -->
+    <link rel="stylesheet" href="pictonic/css/pictonic.css">
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+
+    <!-- Bootstrap styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.css">
+
+    
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+
+    <!-- CSS Slider -->
+    <link rel="stylesheet" href="css/css-slider/gallery.theme.css">
+    <link rel="stylesheet" href="css/css-slider/gallery.css">
+
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- styles needed by jScrollPane -->
+    <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all">
+
+    <!-- Custom styles -->	
+	<link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+    <!-- Top section starts -->
+	<header>
+		<div class="container">
+			<a href="/" class="logo"><img src="img/max1000.png"></a>
+			<form action="" class="search-form">
+				<input type="text" placeholder="Например, джинсы">
+				<button type="submit" class="submit-inside-input"><img src="img/search-btn.png"></button>
+			</form>
+			<div class="counter_inside">
+				<div class="counter">72629</div>
+				<p>товаров до 1000 рублей</p>
+			</div>
+		</div>
+	</header>
+	<nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">ЖЕНЩИНАМ</a></li>
+            <li><a href="#">МУЖЧИНАМ</a></li>
+            <li><a href="#">ДЕТЯМ</a></li>
+            <li><a href="#">ДЛЯ БЕРЕМЕННЫХ</a></li>
+            <li><a href="#">БРЕНДЫ</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Bread Crumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="#">Главная страница</a></li>
+                <li>О нашем сайте</li>
+            </ul>
+        </div>
+    </div><!-- /Bread Crumbs -->
+
+    <!-- About us -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="contacts col-md-6">
+                    <h1>Контактная информация</h1>
+                    <p>Адрес: Российская федерация, Москва, ул. Освободителей 300</p>
+                    <p>Контактный телефон: +7 495 680 60 30</p>
+                    <p>Skype: Max100_support</p>
+                    <div id="map_canvas"></div>
+                </div>
+
+                <!-- Form -->
+                <div class="callback col-md-6">
+                    <h1>Форма обратной связи</h1>
+                    <form action="" class="callback-form form">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="name">Как Вас Зовут?<span class='star'>*</span></label>
+                                <input type="text" id="name" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="phone">Контактный телефон:</label>
+                                <input type="text" id="phone" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="email">Электронная почта:<span class='star'>*</span></label>
+                                <input type="text" id="email" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="skype">Skype для связи:</label>
+                                <input type="text" id="skype" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="message">Введите сообщение:<span class='star'>*</span></label>
+                                <textarea id="message" class="form-control"></textarea>
+                            </div>
+                            <p class="form-notice col-sm-12">Поля отмеченные знаком “<span class='star'>*</span>” - обязательны к заполнению! </p>                            
+                        </div>
+                        <button type="submit" class="submit-outside-input">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                    </form>
+                </div><!-- /Form -->
+            </div><!-- /.row -->
+            <div class="about-info">
+                <h1>Подробная информация о нашем проекте</h1>
+                <p>Наш интернет-магазин одежды работает с официальными поставщиками указанных на сайте брендов. В интернет-магазине можно купить детскую, женскую, мужскую одежду и обувь. Недорогая одежда и обувь в России европейского качества. Мы представляем очень крупного ритейлера одежды и обуви из Европы и можем предложить вам товары ведущих европейских брендов по низким ценам. Весь ассортимент интернет-магазина одежды и обуви является оригинальным и его качество гарантирует производитель. Мы не работаем с копиями, репликами и подделками, только официальная одежда и обувь,  можете вернуть не подошедшую или не понравившуюся вещь в течении 14 дней с момента получения заказа и мы вернём вам деньги. </p>
+                <div class="managers">
+                    <h2>Менеджеры, обслуживающие сайт</h2>
+                    <div class="row">
+                        <div class="manager col-sm-4 col-md-2">
+                            <img src="img/managers/manager1.png">
+                            <p class="manager-name">Анастасия Антонова</p>
+                            <p class="manager-position">Менеджер поддержки</p>
+                        </div>
+                        <div class="manager col-sm-4 col-md-2">
+                            <img src="img/managers/manager1.png">
+                            <p class="manager-name">Анастасия Антонова</p>
+                            <p class="manager-position">Менеджер поддержки</p>
+                        </div>
+                        <div class="manager col-sm-4 col-md-2">
+                            <img src="img/managers/manager1.png">
+                            <p class="manager-name">Анастасия Антонова</p>
+                            <p class="manager-position">Менеджер поддержки</p>
+                        </div>
+                        <div class="manager col-sm-4 col-md-2">
+                            <img src="img/managers/manager1.png">
+                            <p class="manager-name">Анастасия Антонова</p>
+                            <p class="manager-position">Менеджер поддержки</p>
+                        </div>
+                        <div class="manager col-sm-4 col-md-2">
+                            <img src="img/managers/manager1.png">
+                            <p class="manager-name">Анастасия Антонова</p>
+                            <p class="manager-position">Менеджер поддержки</p>
+                        </div>
+                        <div class="manager col-sm-4 col-md-2">
+                            <img src="img/managers/manager1.png">
+                            <p class="manager-name">Анастасия Антонова</p>
+                            <p class="manager-position">Менеджер поддержки</p>
+                        </div>
+                    </div>
+                </div><!-- /.managers -->
+
+                <p>Если вы уже давно искали, где можно продать свои бу вещи, то вы в самом правильном месте. Теперь вы не ограничены своим городом - будь то Москва, Санкт-Петербург или астрахань. На нашем сайте ежедневно тысячи покупателей готовы приобрести хорошие вещи по разумным ценам.</p>
+                <h1 class="we-know">Max100 - мы знаем, как недорого покупать женскую одежду</h1>
+                <p>Теперь вам не нужно продавать или покупать женскую одежду на неспециализированных площадках. Попробуйте Шнаш сайт, вам понравится! Никогда еще не продавали в интернете? Мы поможем. Max100, в отличие от других площадок, была создана для девушек, которые распродают свой гардероб и делают это впервые. Почитайте наше руководство "Как продавать одежду в интернете" и смело размещайте залежавшиеся вещи. Интернет магазины в своих каталогах предлагают широкий ассортимент на любой вкус и кошелек. Почему же мы рекомендуем тебе остановить свой выбор на нашей площадке?</p>
+                <div class="advantages row">                    
+                    <div class="col-sm-4">
+                        <h4>1. Индивидуальность</h4>
+                        <p>Только у нас модная женская одежда продается непосредственно хозяйкой, с которой ты сможешь договориться о цене и доставке.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>2. Хорошая цена</h4>
+                        <p>Десятки тысяч единиц красивой женской одежды, обуви и аксессуаров размещены в нашем каталоге. Где еще ты найдешь такой выбор? </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4>3. Отличное качество</h4>
+                        <p>Десятки тысяч единиц красивой женской одежды, обуви и аксессуаров размещены в нашем каталоге. Где еще ты найдешь такой выбор? </p>
+                    </div>
+                </div>
+                <div class="info-text">
+                    <img src="img/about_image1.png" class="about-image-left">
+                    <p>В этом и разнятся эти два подхода в составлении гардероба. Но в одном они едины: женская брендовая одежда - это идеальный компромисс между стилем и модой. Хороший качественный бренд, подобранный со вкусом, всегда к лицу и всегда актуален. Магазины и интернет-магазины модной женской одежды предлагают множество вариантов даже для самых требовательных покупательниц. Но если вас интересует женская одежда, да еще и недорого, то советуем вам присмотреться к брендам и акциям на этой странице.</p>
+
+                    <p>А благодаря постоянным скидкам и специальным предложениям, мода становится еще ближе. Постоянные акции и распродажи делают шопинг-клуб «LeBoutique» вне конкуренции по сравнению с другими интернет-магазинами женской одежды и обуви. Все, предлагаемые на нашем сайте вещи для женщин, находится в Киеве, но мы осуществляем доставку по всей Украине (а теперь еще и бесплатная доставка в более 500 городов), где есть отделение почты или других сервисов доставки. Поэтому, если вы решили купить женскую одежду или обувь, то ваш заказ будет доставлен уже через пару дней после окончания акции. Женская обувь — своеобразный фетиш для любой дамы. </p>
+
+                    <p>Туфельки и сапожки, босоножки и шлепанцы, а еще ботинки, ботильоны, ботфорты и несметное количество других пар модной женской обуви необходимо кокетливым мадмуазелям для полного счастья. Но вершиной блаженства всегда была и будет итальянская обувь. Купить женскую обувь это как съесть плитку швейцарского шоколада, купить итальянскую обувь. Обувь и Италия так же неразлучны, как черное и белое, как Рим и Колизей, как Ромео и Джульетта. Женская итальянская фирменная обувь доступна каждому. </p>
+
+
+                    <div class="row">                       
+                        <div class="col-md-6">
+                            <p>В магазине «LeBoutique» цены на нее приятно удивят, а качество не заставит сомневаться в элегантном происхождении этой радости на тонком каблучкe.  Ежедневно мы предлагаем свыше 1000 пар различной женской обуви. Балетки, ботильоны, босоножки, сандали, туфли, полусапожки, ботфорты и много другое, Вы найдете в нашим ежедневных распродажах элегантной и брендовой женской обуви. На выбор необходимой пары и оформления уйдет не более 5-10 минут. </p>
+                            
+                            <p>Согласитесь, это намного меньше, чем пройтись по ближайшим магазинам обуви. Каждая модница сможет найти подходящую пару стильной обуви в каталоге.</p>
+
+                            <h3>Каждой женщине свойственно стремление к красоте. Это стремление мы реализуем через здоровое питание, уход за собой, макияж и, конечно же, одежду. Женская одежда это не только средство против холода или солнечных ожогов. Женская одежда — это один из способов выделиться в толпе, проявить себя и привлечь достойного мужчину. Вот почему одежда для женщин требует так много внимания дизайнеров и модельеров со всего мира. Стильная и модная женская одежда — это не одно и то же. Если стильная женская одежда подчеркивает вкус и индивидуальность дамы, то модные вещи скорее отвечают трендам того или иного сезона.</h3>
+
+                            <p>Хороший качественный бренд, подобранный со вкусом, всегда к лицу и всегда актуален. Магазины и интернет-магазины модной женской одежды предлагают множество вариантов даже для самых требовательных покупательниц. Но если вас интересует женская одежда, да еще и недорого. Женская верхняя одежда, летняя одежда, модная брендовая одежда всех возможных стилей и производителей доступна в нашем магазине в режиме 24/7. </p>
+                        </div>
+                        <div class="about-image col-md-6">
+                            <img src="img/about_image2.png">
+                            <p>Вот почему одежда для женщин требует так много внимания дизайнеров и модельеров
+                            со всего мира. Стильная и модная женская одежда — это не одно и то же. Если стильная женская одежда подчеркивает вкус и индивидуальность дамы, то модные вещи скорее отвечают трендам того или иного сезона.</p>
+                        </div>
+                    </div><!-- row -->
+
+                    <p>Хороший качественный бренд, подобранный со вкусом, всегда к лицу и всегда актуален. Магазины и интернет-магазины модной женской одежды предлагают множество вариантов даже для самых требовательных покупательниц. Но если вас интересует женская одежда, да еще и недорого, то советуем вам присмотреться к брендам и акциям на этой странице</p>
+
+                    <ul class="guide">
+                        <li>Найди в каталоге нужный раздел или вбей свой запрос в строке поиска. </li>
+                        <li>Выбирай подходящую вещь по фото. Когда ты наведешь на него курсор, то увидишь краткое описание. </li>
+                        <li>Все подходит? Жми кнопку «Хочу»! Есть вопрос к продавцу? Задай его тут же, на страничке товара. </li>
+                        <li>Договорись про способ оплаты и о доставке в личной переписке с продавцом. А может стоит поторговаться или предложить обмен?</li>
+                    </ul>
+
+                    <p>А благодаря постоянным скидкам и специальным предложениям, мода становится еще ближе. Постоянные акции и распродажи делают шопинг-клуб «LeBoutique» вне конкуренции по сравнению с другими интернет-магазинами женской одежды и обуви. Все, предлагаемые на нашем сайте вещи для женщин, находится в Киеве, но мы осуществляем доставку по всей Украине (а теперь еще и бесплатная доставка в более 500 городов), где есть отделение почты или других сервисов доставки. </p>
+
+                    <div class="full-image"><img src="img/about_image3.png"></div>
+                    <p>Одежда — совокупность швейных изделий (из ткани, вязаного полотна, кожи и меха), надеваемых человеком с целью обезопасить своё тело от негативного влияния окружающей среды (погодных условий, насекомых, токсических веществ и другое); одежда выполняет эстетические функции — создаёт образ (имидж) человека, что позволяет судить о его социальной роли. Дополняется украшениями, аксессуарами, причёской и макияжем. Различают два типа одежда: плечевую и поясную, в зависимости от того, какой участок тела человека является опорным. В зависимости от времени года и климатических зон, одежда делится на виды: летняя, зимняя, демисезонная и всесезонная. По половозростным признакам одежду делят на подгруппы.</p>
+
+                    <blockquote>
+                        <p>История одежды с древнейших времен до наших дней является как бы зеркалом, в котором отражается вся история человечества. Каждая страна, каждый народ в отдельные периоды своего развития налагают свой отпечаток, свои специфические черты на одежду людей. История моды почти так же стара, как и история костюма. С того момента, когда человек открыл значение одежды как средства защиты от неблагоприятных воздействий природы, оставалось немного до тех пор, пока он не начал размышлять о её эстетической и стилизующей функции.</p>
+                        <p class="manager-name">Александра Внушилина</p>
+                        <p class="manager-position">Коммерческий директор</p>
+                    </blockquote>
+                    <p class="arch">Данные археологических раскопок свидетельствуют, что одежда появилась уже на самых ранних стадиях развития человеческого общества. Главным материалом для первобытной одежды повсеместно были шкуры животных. Необходимые для их обработки инструменты (скребки, ножи, проколки и т. п.) обнаруживают на стоянках первобытных людей, относящихся к эпохе мустье (100-40 тыс. лет назад). </p>
+                </div>
+                
+
+            </div>
+        </div><!-- /.container -->
+    </div><!-- /About us -->
+
+    <!-- Subscription section -->
+    <div class="subscription-section">
+        <div class="container">
+            <div class="row">
+                <div class="text col-md-3 wow animated fadeInLeft" data-wow-delay="0.5s">ПОЛУЧАЙТЕ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ НА ПОЧТУ</div>
+                <div class="col-md-9 wow animated fadeInRight" data-wow-delay="0.5s">
+                    <form action="" class="form-inline">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <input type='text' class="form-control" placeholder='Введите Ваше имя'>
+                            </div>
+                            <div class="col-md-5">
+                                <input type='text' class="form-control" placeholder='Введите email'>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn submit-outside-input">ХОЧУ ПОЛУЧАТЬ</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><!-- /subscription section -->
+
+    <footer>
+        <div class='container'>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h5>О нашем проекте</h5>
+                    <ul>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Условия использования сайта</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h5>Популярные бренды</h5>
+                    <ul>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Dolce & Gabbana</a></li>
+                        <li><a href="#">Luis Vuitton</a></li>
+                        <li><a href="#">Giorgio Armani</a></li>
+                        <li><a href="#">Elisabetta Franchi</a></li>
+                        <li><a href="#">Roger Herbst</a></li>
+                        <li><a href="#">Boucheron</a></li>
+                        <li><a href="#">Lacoste</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h5>Популярные товары</h5>
+                    <ul>
+                        <li><a href="#">Джемпера</a></li>
+                        <li><a href="#">Кофты и рубашки</a></li>
+                        <li><a href="#">Женские сумочки</a></li>
+                        <li><a href="#">Карнавальные костюмы</a></li>
+                        <li><a href="#">Кеды и кроссовки</a></li>
+                        <li><a href="#">Куртки и плащи</a></li>
+                        <li><a href="#">Шорты и юбки</a></li>
+                        <li><a href="#">Нижнее белье</a></li>
+                        <li><a href="#">Свитеры</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h5>Наши партнеры</h5>
+                    <ul>
+                        <li><a href="#">Магазин &#8220;Laboga&#8221;</a></li>
+                        <li><a href="#">Магазин &#8220;Armani Jeans&#8221;</a></li>
+                        <li><a href="#">Магазин &#8220;Lacosta Россия&#8221;</a></li>
+                        <li><a href="#">Магазин &#8220;Butik&#8221;</a></li>
+                    </ul>
+                    <div class="social-networks">
+                        <h5>Присоединяйтесь к нам в социальных сетях</h5>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="0.5s"><span class="icon-facebook"></span></a>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="0.65s"><span class="icon-rus-vk-01"></span></a>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="0.8s"><span class="icon-twitter-1"></span></a>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="0.95s"><span class="icon-odnoklassniki"></span></a>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="1.10s"><span class="icon-google__x2B_"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JQuery lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- WOW.js for animate.css (when an element is visible on screen)-->
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/ekko-lightbox.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- the mousewheel plugin - optional to provide mousewheel support -->
+    <script type="text/javascript" src="js/jscrollpane/jquery.mousewheel.js"></script>
+
+    <!-- the jScrollPane script -->
+    <script type="text/javascript" src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+
+    <!-- Google Maps -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+    <script type="text/javascript">
+        function initialize() {     
+            var myLatlng = new google.maps.LatLng(-34.397, 150.644);
+            var myOptions = {
+                zoom: 8,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+        }
+    </script>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        /* jQuery.ScrollPane Plug-In */
+        $( document ).ready(function() {
+            $('.colors-list').jScrollPane();
+        });
+    </script>
+</body>
+</html>

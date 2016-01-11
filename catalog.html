@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Max1000</title>
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Pictonic (font) Icons -->
+    <link rel="stylesheet" href="pictonic/css/pictonic.css">
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+
+    <!-- Bootstrap styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.css">
+
+    
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+
+    <!-- CSS Slider -->
+    <link rel="stylesheet" href="css/css-slider/gallery.theme.css">
+    <link rel="stylesheet" href="css/css-slider/gallery.css">
+
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- styles needed by jScrollPane -->
+    <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all">
+
+    <!-- Custom styles -->	
+	<link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+    <!-- Top section starts -->
+	<header>
+		<div class="container">
+			<a href="/" class="logo"><img src="img/max1000.png"></a>
+			<form action="" class="search-form">
+				<input type="text" placeholder="Например, джинсы">
+				<button type="submit" class="submit-inside-input"><img src="img/search-btn.png"></button>
+			</form>
+			<div class="counter_inside">
+				<div class="counter">72629</div>
+				<p>товаров до 1000 рублей</p>
+			</div>
+		</div>
+	</header>
+	<nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">ЖЕНЩИНАМ</a></li>
+            <li><a href="#">МУЖЧИНАМ</a></li>
+            <li><a href="#">ДЕТЯМ</a></li>
+            <li><a href="#">ДЛЯ БЕРЕМЕННЫХ</a></li>
+            <li><a href="#">БРЕНДЫ</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Bread Crumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="#">Главная страница</a></li>
+                <li><a href="#">Каталог товаров</a></li>
+                <li><a href="#">Одежда для женщин</a></li>
+                <li>Аксессуары</li>
+            </ul>
+        </div>
+    </div><!-- /Bread Crumbs -->
+
+    <!-- Catalog of products -->
+    <div class="catalog-section">
+        <div class="container">
+            <div class="row">
+                <div class="catalog-menu col-sm-4 col-md-3">
+                    <h4 id="catalog_of_products">Каталог товаров <span class='mobile-btn'></span></h4>
+                    <form action="" class="filter-form">
+                        <!-- The first level of depth -->
+                        <ul class="categories-list" id="catalog_of_products_list">
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="for_wooman">
+                                    <label for="for_wooman">Для женжин <i class="fa fa-caret-right"></i></label>
+                                </div>
+
+                                <!-- The second level of depth -->
+                                <ul class="categories-list">
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="clothes">
+                                            <label for="clothes">Одежда<span class='quantity'>68004</span></label>
+                                        </div>
+
+                                        <!-- The third level of depth -->
+                                        <ul class="categories-list">
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="outerwear">
+                                                    <label for="outerwear">Верхняя одежда<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="dresses">
+                                                    <label for="dresses">Платья<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="tops">
+                                                    <label for="tops">Топы<span class='quantity'>378</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="skirts">
+                                                    <label for="skirts">Юбки<span class='quantity'>387</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="swimwear">
+                                                    <label for="swimwear">Купальники<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="blouses">
+                                                    <label for="blouses">Блузки<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="tunics">
+                                                    <label for="tunics">Туники<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="coveralls">
+                                                    <label for="coveralls">Комбинезоны<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="sarong">
+                                                    <label for="sarong">Парео<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="shirts1">
+                                                    <label for="shirts1">Рубашки<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="polo">
+                                                    <label for="polo">Поло<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="shirts2">
+                                                    <label for="shirts2">Футболки<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="vests">
+                                                    <label for="vests">Жилетки<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="suits_and_jackets">
+                                                    <label for="suits_and_jackets">Костюмы и пиджаки<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="pants_and_shorts">
+                                                    <label for="pants_and_shorts">Брюки и шорты<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="jeans">
+                                                    <label for="jeans">Джинсы<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="tights">
+                                                    <label for="tights">Колготки<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="stockings">
+                                                    <label for="stockings">Чулки<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="bees">
+                                                    <label for="bees">Карнавальные костюмы<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="hats">
+                                                    <label for="hats">Головные уборы<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="skirts_and_shorts">
+                                                    <label for="skirts_and_shorts">Юбки и шорты<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="tvinsety">
+                                                    <label for="tvinsety">Твинсеты<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="bib">
+                                                    <label for="bib">Полукомбинезоны<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="underwear">
+                                                    <label for="underwear">Нижнее белье<span class='quantity'>983</span></label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="footwear">
+                                            <label for="footwear">Обувь<span class='quantity'>700</span></label>
+                                        </div>
+
+                                        <!-- The third level of depth -->
+                                        <ul class="categories-list">
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="shoes">
+                                                    <label for="shoes">Ботинки<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="sneakers">
+                                                    <label for="sneakers">Кроссовки<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="footwear2">
+                                    <label for="footwear2">Обувь <i class="fa fa-caret-right"></i></label>
+                                </div>
+
+                                <!-- The second level of depth -->
+                                <ul class="categories-list">
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="category11">
+                                            <label for="category11">Category11<span class='quantity'>68004</span></label>
+                                        </div>
+
+                                        <!-- The third level of depth -->
+                                        <ul class="categories-list">
+                                            <li class="category-list-item">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="category222">
+                                                    <label for="category222">Category222<span class='quantity'>700</span></label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="accessories">
+                                    <label for="accessories">Аксессуары <i class="fa fa-caret-right"></i></label>
+                                </div>
+                            </li>
+
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="for_men">
+                                    <label for="for_men">Для мужчин <i class="fa fa-caret-right"></i></label>
+                                </div>
+                            </li>
+
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="for_children">
+                                    <label for="for_children">Для детей <i class="fa fa-caret-right"></i></label>
+                                </div>
+                            </li>
+
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="for_pregnant">
+                                    <label for="for_pregnant">Для беременных <i class="fa fa-caret-right"></i></label>
+                                </div>
+                            </li>
+                        </ul><!-- /#catalog-of-products -->
+
+                        <!-- Prices -->
+                        <h4 id="prices_filter">Цены <span class='mobile-btn'></span></h4>
+
+                        <ul class="prices-filter" id="prices_filter_list">
+                            <li>
+                                <div class="radio">                               
+                                    <input type="radio" name='price' id="to_200">
+                                    <label for="to_200">До 200 рублей <span class='quantity'>29</span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio">                               
+                                    <input type="radio" name='price' id="to_300">
+                                    <label for="to_300">До 300 рублей <span class='quantity'>321</span></label>
+                                </div>
+                            </li>    
+                            <li>
+                                <div class="radio">                               
+                                    <input type="radio" name='price' id="to_500">
+                                    <label for="to_500">До 500 рублей <span class='quantity'>6661</span></label>
+                                </div>
+                            </li>    
+                            <li>
+                                <div class="radio">                               
+                                    <input type="radio" name='price' id="to_1000">
+                                    <label for="to_1000">До 1000 рублей <span class='quantity'>9201</span></label>
+                                </div>
+                            </li>    
+                        </ul>
+
+                        <!-- Brands -->
+                        <h4 id="brands">Бренды <span class='mobile-btn'></span></h4>
+
+                        <ul class="catalog-list brand-list" id="brands_list">
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="adidas">
+                                    <label for="adidas">Adidas<span class='quantity'>6878</span></label>
+                                </div>
+                            </li>
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="zara">
+                                    <label for="zara">ZARA<span class='quantity'>6878</span></label>
+                                </div>
+                            </li>
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="giorgio_armani">
+                                    <label for="giorgio_armani">Giorgio Armani<span class='quantity'>6878</span></label>
+                                </div>
+                            </li>
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="dsquared">
+                                    <label for="dsquared">Dsquared<span class='quantity'>6878</span></label>
+                                </div>
+                            </li>
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="stefan_paok">
+                                    <label for="stefan_paok">Stefan Paok<span class='quantity'>6878</span></label>
+                                </div>
+                            </li>
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="hermess">
+                                    <label for="hermess">Hermess<span class='quantity'>6878</span></label>
+                                </div>
+                            </li>
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="migura">
+                                    <label for="migura">Migura<span class='quantity'>1556</span></label>
+                                </div>
+                            </li>
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="vero_moda">
+                                    <label for="vero_moda">Vero Moda<span class='quantity'>678</span></label>
+                                </div>
+                            </li>
+                            <li class="category-list-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="vercosta">
+                                    <label for="vercosta">Vercosta<span class='quantity'>470</span></label>
+                                </div>
+                            </li>
+
+                            <!-- Brand search -->
+                            <div class="search-brand-block">
+                                <input type="text" class="search-brand" placeholder='Поиск бренда'>
+                                <button type="submit" class="submit-inside-input"><img src="img/search-btn.png"></button>
+                            </div>
+                        </ul>
+
+                        
+
+                        <!-- Colors -->
+                        <h4 id="colors">Цвета <span class='mobile-btn'></span></h4>
+                        <div id="colors_list">
+                            <div class="colors-list">
+                                <ul class="catalog-list">
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="red">
+                                            <label for="red">Красный<span class='quantity'>29</span></label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="navy-blue">
+                                            <label for="navy-blue">Синий<span class='quantity'>29</span></label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="white">
+                                            <label for="white">Белый<span class='quantity'>29</span></label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="black">
+                                            <label for="black">Черный<span class='quantity'>29</span></label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="blue">
+                                            <label for="blue">Голубой<span class='quantity'>29</span></label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="orange">
+                                            <label for="orange">Оранжевый<span class='quantity'>29</span></label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="grey">
+                                            <label for="grey">Серый<span class='quantity'>29</span></label>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Sizes -->
+                        <h4 id="sizes">Размер <span class='mobile-btn'></span></h4>
+                        <div class="sizes-list" id="sizes_list">
+                            <ul class="catalog-list">
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size34">
+                                        <label for="size34">34</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size35">
+                                        <label for="size35">35</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size36">
+                                        <label for="size36">36</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size37">
+                                        <label for="size37">37</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size38">
+                                        <label for="size38">38</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size39">
+                                        <label for="size39">39</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size40">
+                                        <label for="size40">40</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size41">
+                                        <label for="size41">41</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size42">
+                                        <label for="size42">42</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size43">
+                                        <label for="size43">43</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size44">
+                                        <label for="size44">44</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size45">
+                                        <label for="size45">45</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size46">
+                                        <label for="size46">46</label>
+                                    </div>
+                                </li>
+                                <li class="category-list-item sizes-list-item">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="size47">
+                                        <label for="size47">47</label>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="letter-sizes">
+                                <ul class="catalog-list">
+                                    <li class="category-list-item sizes-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="size_s">
+                                            <label for="size_s">S</label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item sizes-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="size_xs">
+                                            <label for="size_xs">XS</label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item sizes-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="size_xxs">
+                                            <label for="size_xxs">XXS</label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item sizes-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="size_m">
+                                            <label for="size_m">M</label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item sizes-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="size_l">
+                                            <label for="size_l">L</label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item sizes-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="size_xl">
+                                            <label for="size_xl">XL</label>
+                                        </div>
+                                    </li>
+                                    <li class="category-list-item sizes-list-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="size_xxl">
+                                            <label for="size_xxl">XXL</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="catalog-content col-sm-8 col-md-9">
+                    <h2>Аксессуары до 1000 рублей <span class='quantity-of-products'>68700 товаров</span></h2>
+
+                    <!-- Tags -->
+                    <div class="your-tags">
+                        <div class="your-choice">Ваш выбор:</div>
+
+                        <div class="active-tag">
+                            <a href="#" class="remove-tag"><span class='glyphicon glyphicon-remove'></span></a>
+                            <span class='tag-name'>аксессуары</span>
+                        </div>
+                        <div class="active-tag">
+                            <a href="#" class="remove-tag"><span class='glyphicon glyphicon-remove'></span></a>
+                            <span class='tag-name'>цена до 1000 руб.</span>
+                        </div>
+                        <div class="active-tag">
+                            <a href="#" class="remove-tag"><span class='glyphicon glyphicon-remove'></span></a>
+                            <span class='tag-name'>цвет: красный</span>
+                        </div>
+                    </div><!-- /Tags -->
+
+                    <form action="" class="sort-form form-inline">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-8">
+                                <!-- Sort -->
+                                <div class="sort-by">
+                                    <div class="your-choice">Сортировать:</div>                                    
+                                    <div class="radio">                               
+                                        <input type="radio" name='sort' id="by_price">
+                                        <label for="by_price">по цене <i class="fa fa-caret-down"></i></label>
+                                    </div>
+                                    <div class="radio">                               
+                                        <input type="radio" name='sort' id="by_popularity" checked="">
+                                        <label for="by_popularity">по популярности <i class="fa fa-caret-down"></i></label>
+                                    </div>
+                                    <div class="radio">                               
+                                        <input type="radio" name='sort' id="by_sale">
+                                        <label for="by_sale">по размеру скидки <i class="fa fa-caret-down"></i></label>
+                                    </div>
+                                </div><!-- /Sort -->
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-4 text-right">
+                                <!-- Display products on page -->
+                                <div class="display-on-page">
+                                    <div class="your-choice">Выводить на странице:</div>  
+                                    <div class="radio">                               
+                                        <input type="radio" name='display' id="thirty">
+                                        <label for="thirty">30</label>
+                                    </div>
+                                    <div class="radio">                               
+                                        <input type="radio" name='display' id="sixty" checked="">
+                                        <label for="sixty">60</label>
+                                    </div>
+                                    <div class="radio">                               
+                                        <input type="radio" name='display' id="hundred">
+                                        <label for="hundred">120</label>
+                                    </div>
+                                </div><!-- /Display products on page -->
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="products-in-catalog">
+                        <div class="row">
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+                                    
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+                                    
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+                                    
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+                                    
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Form -->
+                            <div class="col-sm-12">                                
+                                <div class="subscription wow animated fadeInRight" data-wow-delay="0.2s">
+                                    <h4>Вступайте в клуб и получайте лучше предложения на свой email</h4>
+                                    <form action="" class="form-inline">                         
+                                        <input type='text' class="form-control" placeholder='Введите Ваше имя'>
+                                        <input type='text' class="form-control" placeholder='Введите email'>
+                                        <button type="submit" class="btn submit-outside-input">ХОЧУ ПОЛУЧАТЬ</button>
+                                    </form>
+                                    <p>Никакого спама, гарантия 100%! В любой момент Вы сможете отписаться от рассылки!</p>
+                                </div>                                
+                            </div><!-- /Form -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+                                    
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+                                    
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+                                    
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <!-- Product -->
+                            <div class="col-sm-4">                                
+                                <div class="product">
+                                    <!-- Product's image -->
+                                    <div class="product-image">
+                                        <a href=""><img src="img/products/hat.png"></a>
+                                    </div>
+                                    <!--  -->
+                                    
+                                    <div class="caption">
+                                        <a href="#">
+                                            <h4 class="title">Adidas Sport</h4>
+                                            <p class="description">
+                                                Мужская стильная спортивная шапка Adidas B800 Sweppre NEW
+                                            </p>
+                                            <div class="price">
+                                                <div class="now">710<span class='currency'>руб.</span></div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /Product -->
+
+                            <div class="col-sm-12 text-center">
+                                <a href="#" class="show-more-products">
+                                    <i class="fa fa-caret-down"></i>
+                                    ПОКАЗАТЬ БОЛЬШЕ ТОВАРОВ
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                            </div>
+
+                            <!-- Pagination -->
+                            <nav class='pag'>
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <i class="fa fa-caret-left"></i>
+                                                <span class='pag-text'>Предыдущая страница</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1 <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">5</a>
+                                    </li>
+                                    <li class="dots">
+                                        ... 
+                                    </li>
+                                    <li>
+                                        <a href="#">680</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <span class='pag-text'>Следующая страница</span>
+                                                <i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class='about-shop'>
+                                <h3>Аксессуары по низкой цене из популярных интернет-магазинов</h3>
+                                <p>Наш интернет-магазин одежды работает с официальными поставщиками указанных на сайте брендов. В интернет-магазине можно купить детскую, женскую, мужскую одежду и обувь. Недорогая одежда и обувь в России европейского качества. Мы представляем очень крупного ритейлера одежды и обуви из Европы и можем предложить вам товары ведущих европейских брендов по низким ценам. Весь ассортимент интернет-магазина одежды и обуви является оригинальным и его качество гарантирует производитель. Мы не работаем с разными копиями, репликами и подделками, только официальная одежда и обувь,  можете вернуть не подошедшую или не понравившуюся вещь в течении 14 дней с момента получения заказа и мы вернём вам деньги. Если вы найдете аналогичный товар на территории Российской Федерации дешевле, укажите нам ссылку и мы постараемся продать данный товарещё дешевле. Мы стараемся следить за самыми последними тенденциями в мире, чтобы Вы всегда выглядели привлекательно.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.col-md -->
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </div><!-- /Catalog of products -->
+
+    
+
+    <div class="subscription-section">
+        <div class="container">
+            <div class="row">
+                <div class="text col-md-3 wow animated fadeInLeft" data-wow-delay="0.5s">ПОЛУЧАЙТЕ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ НА ПОЧТУ</div>
+                <div class="col-md-9 wow animated fadeInRight" data-wow-delay="0.5s">
+                    <form action="" class="form-inline">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <input type='text' class="form-control" placeholder='Введите Ваше имя'>
+                            </div>
+                            <div class="col-md-5">
+                                <input type='text' class="form-control" placeholder='Введите email'>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn submit-outside-input">ХОЧУ ПОЛУЧАТЬ</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class='container'>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <h5>О нашем проекте</h5>
+                    <ul>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Условия использования сайта</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h5>Популярные бренды</h5>
+                    <ul>
+                        <li><a href="#">Adidas</a></li>
+                        <li><a href="#">Dolce & Gabbana</a></li>
+                        <li><a href="#">Luis Vuitton</a></li>
+                        <li><a href="#">Giorgio Armani</a></li>
+                        <li><a href="#">Elisabetta Franchi</a></li>
+                        <li><a href="#">Roger Herbst</a></li>
+                        <li><a href="#">Boucheron</a></li>
+                        <li><a href="#">Lacoste</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h5>Популярные товары</h5>
+                    <ul>
+                        <li><a href="#">Джемпера</a></li>
+                        <li><a href="#">Кофты и рубашки</a></li>
+                        <li><a href="#">Женские сумочки</a></li>
+                        <li><a href="#">Карнавальные костюмы</a></li>
+                        <li><a href="#">Кеды и кроссовки</a></li>
+                        <li><a href="#">Куртки и плащи</a></li>
+                        <li><a href="#">Шорты и юбки</a></li>
+                        <li><a href="#">Нижнее белье</a></li>
+                        <li><a href="#">Свитеры</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h5>Наши партнеры</h5>
+                    <ul>
+                        <li><a href="#">Магазин &#8220;Laboga&#8221;</a></li>
+                        <li><a href="#">Магазин &#8220;Armani Jeans&#8221;</a></li>
+                        <li><a href="#">Магазин &#8220;Lacosta Россия&#8221;</a></li>
+                        <li><a href="#">Магазин &#8220;Butik&#8221;</a></li>
+                    </ul>
+                    <div class="social-networks">
+                        <h5>Присоединяйтесь к нам в социальных сетях</h5>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="0.5s"><span class="icon-facebook"></span></a>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="0.65s"><span class="icon-rus-vk-01"></span></a>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="0.8s"><span class="icon-twitter-1"></span></a>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="0.95s"><span class="icon-odnoklassniki"></span></a>
+                        <a href="#" class="wow animated bounceIn" data-wow-delay="1.10s"><span class="icon-google__x2B_"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JQuery lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- WOW.js for animate.css (when an element is visible on screen)-->
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/ekko-lightbox.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- the mousewheel plugin - optional to provide mousewheel support -->
+    <script type="text/javascript" src="js/jscrollpane/jquery.mousewheel.js"></script>
+
+    <!-- the jScrollPane script -->
+    <script type="text/javascript" src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        /* jQuery.ScrollPane Plug-In */
+        $( document ).ready(function() {
+            $('.colors-list').jScrollPane();
+        });
+    </script>
+</body>
+</html>
